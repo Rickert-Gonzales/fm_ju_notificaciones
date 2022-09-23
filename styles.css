@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+/* @font-face {
+   font-family: Plus Jacarta;
+   src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf"),
+      url("./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf"),
+      url("./assets/fonts/static/PlusJakartaSans-Medium.ttf");
+} */
+:root {
+   --red_c: #f65351;
+   --blue_c: hsl(219, 85%, 26%);
+   /* Neutral */
+   --white: hsl(0, 0%, 100%);
+   --very_light_grayish_blue: hsl(210, 60%, 98%);
+   --light_grayish_blue_1: hsl(211, 68%, 94%);
+   --light_grayish_blue_2: hsl(205, 33%, 90%);
+   --grayish_blue: hsl(219, 14%, 63%);
+   --dark_grayish_blue: hsl(219, 12%, 42%);
+   --very_dark_blue: hsl(224, 21%, 14%);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 16px;
+}
+a {
+   text-decoration: none;
+}
+p {
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+}
+span {
+   color: var(--grayish_blue);
+   font-size: 12px;
+   font-weight: 600;
+   padding-top: 4px;
+}
+
+/* Contenedor */
+section {
+   width: 100%;
+   /* height: 100vh; */
+   padding: 24px 12px 12px 12px;
+}
+nav {
+   width: 100%;
+   height: 22px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.contenedor_not {
+   width: 100%;
+   height: 100%;
+   display: inherit;
+   align-items: center;
+}
+.contenedor_not p {
+   font-size: 18px;
+   font-weight: 800;
+   padding-right: 10px;
+   color: var(--very_dark_blue);
+}
+.contenedor_not .num_not {
+   width: 32px;
+   height: 100%;
+   display: inherit;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   font-weight: 900;
+   background-color: var(--blue_c);
+   color: white;
+   border-radius: 3px;
+}
+nav button {
+   width: 160px;
+   font-size: 14px;
+   font-weight: 600;
+   background-color: transparent;
+   color: var(--dark_grayish_blue);
+   border: none;
+   cursor: pointer;
+}
+.tarjetas_not {
+   margin-top: 14px;
+   padding-top: 12px;
+}
+#activa {
+   background-color: var(--light_grayish_blue_1);
+}
+.tarjeta {
+   width: 100%;
+   margin-bottom: 12px;
+   padding: 12px;
+   display: flex;
+   border-radius: 8px;
+}
+.tarjeta img {
+   width: 38px;
+   height: 38px;
+   margin-right: 10px;
+}
+.contenido {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.contenido p a:nth-child(1) {
+   font-weight: 800;
+   color: var(--very_dark_blue);
+}
+.contenido p a:nth-child(2) {
+   font-weight: 700;
+   color: var(--dark_grayish_blue);
+}
+.contenido p a.usuario_ref {
+   font-weight: 700;
+   color: var(--blue_c);
+}
+.contenido .not_img {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.contenido .not_img p {
+   padding-right: 24px;
+}
+.contenido .not_img img {
+   width: 36px;
+   height: 36px;
+}
+.contenido .mensaje {
+   margin-top: 12px;
+   border: 0.5px solid var(--light_grayish_blue_2);
+   border-radius: 6px;
+   padding: 14px 28px 14px 14px;
+   cursor: pointer;
+   animation: 2s ease;
+}
+.contenido .mensaje:hover {
+   background-color: var(--light_grayish_blue_1);
+}
+
+.contenido .circulo {
+   visibility: collapse;
+}
+
+footer {
+   margin-bottom: 24px;
+}
+
+.contenido p a:hover {
+   color: var(--blue_c);
+}
+
+/* Media Queri */
+@media screen and (min-width: 600px) {
+   section {
+      margin: 0 auto;
+      width: 50%;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      box-shadow: -2px 2px 20px 4px rgba(128, 128, 128, 0.4);
+      border-radius: 8px;
+   }
+}
